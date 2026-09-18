@@ -1,106 +1,87 @@
-# Walmart Sales Analysis — SQL
+# Walmart Sales Analysis using SQL
 
-A SQL-based exploratory data analysis project using Walmart-style retail sales data. The project focuses on analyzing sales performance, product trends, customer behavior, payment methods, branch performance, and customer ratings using MySQL.
+## About the Project
 
-## Project Overview
+This project focuses on analyzing Walmart sales data using SQL. The analysis is used to understand sales performance, product categories, customer behavior, payment methods, and branch-level performance.
 
-| Item            | Details                   |
-| --------------- | ------------------------- |
-| Dataset         | Walmart Sales Dataset     |
-| Records         | 1,000 transactions        |
-| Cities          | 3                         |
-| Branches        | 3                         |
-| Product Lines   | 6                         |
-| Customer Types  | 2                         |
-| Payment Methods | 3                         |
-| Database        | MySQL                     |
-| Analysis Type   | Exploratory Data Analysis |
+The project uses MySQL for querying and analyzing the dataset.
 
 ## Objectives
 
-* Analyze overall sales and revenue performance.
-* Identify top-performing product lines and cities.
-* Evaluate customer purchasing patterns.
-* Analyze payment methods and customer segments.
-* Compare branch and gender-wise sales behavior.
-* Analyze customer ratings across products, branches, days, and time periods.
-* Extract business insights using SQL aggregation, filtering, subqueries, CTEs, and `CASE` statements.
+- Analyze Walmart sales data
+- Understand sales performance across different branches
+- Analyze product categories
+- Study customer purchasing patterns
+- Compare different payment methods
+- Analyze customer ratings
+- Identify sales trends based on time and date
 
-## SQL Analysis
+## Dataset
 
-### Data Preparation
+The dataset contains information about Walmart transactions, including:
 
-* Created the `walmartSales` database and `sales` table.
-* Defined appropriate data types and primary key constraints.
-* Added derived columns:
+- Invoice details
+- Branch and city
+- Customer type
+- Gender
+- Product line
+- Unit price
+- Quantity
+- Tax
+- Total sales
+- Date and time
+- Payment method
+- Customer rating
 
-  * `time_of_day`
-  * `day_name`
-  * `month_name`
+## Tools Used
 
-### Product Analysis
-
-* Product-line performance
-* Monthly revenue and COGS
-* Highest-revenue products
-* Product-line VAT contribution
-* Average product ratings
-* Product performance by gender
-* Branch sales compared with average quantity sold
-
-### Sales Analysis
-
-* Sales by time of day and weekday
-* Revenue by customer type
-* VAT contribution by city
-* VAT contribution by customer type
-
-### Customer Analysis
-
-* Customer-type distribution
-* Payment-method usage
-* Customer purchasing frequency
-* Gender distribution
-* Branch-wise gender distribution
-* Ratings by time of day, branch, and weekday
-
-## Key Findings
-
-| Metric                       | Finding                  |
-| ---------------------------- | ------------------------ |
-| Highest Revenue City         | Naypyitaw                |
-| Highest Revenue Product Line | Food and beverages       |
-| Most Used Payment            | Ewallet                  |
-| Customer Split               | 501 Members / 499 Normal |
-| Gender Split                 | 501 Female / 499 Male    |
-| Total Transactions           | 1,000                    |
+- MySQL
+- SQL
+- CSV Dataset
 
 ## SQL Concepts Used
 
-`CREATE DATABASE` · `CREATE TABLE` · `ALTER TABLE` · `UPDATE` · `SELECT` · `WHERE` · `GROUP BY` · `HAVING` · `ORDER BY` · `LIMIT` · Aggregate Functions · Subqueries · CTEs · `CASE` Statements · Date Functions
+- SELECT
+- WHERE
+- GROUP BY
+- ORDER BY
+- Aggregate Functions
+- CASE Statements
+- HAVING
+- Subqueries
+- Common Table Expressions (CTEs)
+- Date and Time Functions
 
-## Repository Structure
+## Analysis Performed
 
-```text
-Walmart-Sales-Analysis/
-├── Walmart Sales Analysis Solution.sql
-├── WalmartSalesData.csv
-└── README.md
-```
+### Sales Analysis
 
-## How to Run
+Analyzed sales and revenue across different branches, product categories, and time periods.
 
-1. Install MySQL Server and MySQL Workbench.
-2. Import `WalmartSalesData.csv` into the `sales` table.
-3. Open `Walmart Sales Analysis Solution.sql`.
-4. Execute the database and table creation statements.
-5. Run the data preparation queries.
-6. Execute the EDA queries to reproduce the analysis.
+### Product Analysis
 
-## Skills Demonstrated
+Compared product lines based on sales, quantity, and customer ratings.
 
-SQL | Data Analysis | Exploratory Data Analysis | MySQL | Data Cleaning | Aggregation | Business Insights | Customer Analytics
+### Customer Analysis
 
-## Project Outcome
+Explored customer types and purchasing patterns.
 
-This project demonstrates the ability to transform raw retail transaction data into structured business insights using SQL, with emphasis on sales performance, customer behavior, product analysis, and operational trends.
+### Payment Analysis
+
+Analyzed the use of different payment methods across transactions.
+
+### Branch Analysis
+
+Compared branch performance using sales and customer-related metrics.
+
+### Time Analysis
+
+Explored sales patterns based on dates, days, and different time periods.
+
+## Conclusion
+
+This project helped me practice SQL queries and understand how SQL can be used to answer business-related questions from transactional data.
+
+## Reference
+
+This project was used as a learning reference and is being studied and adapted for practice in SQL and data analysis.
